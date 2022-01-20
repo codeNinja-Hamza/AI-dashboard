@@ -1,0 +1,46 @@
+$font-family: "poppins";
+.fraud-prevent-wrapper {
+  margin-bottom: 100px;
+  .card-heading {
+    font-size: 31px;
+    font-weight: 600;
+    font-family: $font-family;
+    margin-bottom: 20px;
+  }
+  .fraud-prevent-card {
+    font-family: $font-family;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+
+    .card-info {
+      border-right: 1px solid #ebebeb;
+      flex-basis: 45%;
+      padding-left: 20px;
+      .helper-text {
+        font-size: 12px;
+        font-family: $font-family;
+        color: #a1a5b7;
+      }
+      .data {
+        font-family: $font;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+    .circle-bar-sec {
+      flex-basis: 20%;
+      margin-right: 100px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .no-of-instances {
+        text-align: center;
+        padding-top: 10px;
+        font-weight: 450;
+      }
+    }
+  }
+}

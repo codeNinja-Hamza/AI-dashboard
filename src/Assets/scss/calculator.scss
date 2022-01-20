@@ -1,0 +1,173 @@
+$font-family: "poppins";
+.calculator-card-wrapper {
+  background-color: white;
+  height: 100%;
+  overflow: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  .calculator-card {
+    font-family: $font-family;
+    .calculation-section {
+      margin-top: 20px;
+      .card-heading {
+        font-size: 18px;
+        font-weight: 600;
+        padding-left: 50px;
+        // padding-top: 20px;
+      }
+      .text {
+        font-family: $font-family;
+        font-size: 10px;
+        color: #a1a5b7;
+        padding-left: 50px;
+      }
+      .middle-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid lightgrey;
+        .score-section {
+          display: flex;
+          align-items: center;
+        }
+        .credit-limit-section {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+        }
+        .text-side {
+          padding-left: 10px;
+          .helper-text {
+            font-size: 10px;
+            font-family: $font-family;
+            color: #a1a5b7;
+          }
+          .data-value {
+            font-family: $font-family;
+            font-size: 20px;
+            font-weight: 450;
+            color: rgb(0, 120, 44);
+          }
+        }
+      }
+
+      .inputField {
+        margin-top: 5px;
+        padding-left: 50px;
+        padding-top: 10px;
+        input {
+          width: 25%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          border: 1px solid #bb0f2f;
+          border-right: none;
+          border-top-left-radius: 2px;
+          border-bottom-left-radius: 2px;
+          outline: none;
+          &::placeholder {
+            color: #a1a5b7;
+          }
+        }
+
+        button {
+          background: #bb0f2f;
+          color: white;
+          padding: 11px;
+          margin-bottom: 10px;
+          border: none;
+          border-top-right-radius: 2px;
+          border-bottom-right-radius: 2px;
+        }
+      }
+    }
+    .table-section {
+      width: 100%;
+      padding-left: 50px;
+      font-family: $font-family;
+      font-size: 26px;
+      text-align: left;
+      height: 200px !important;
+      overflow-y: scroll;
+      .table-heading {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .table {
+        overflow-y: scroll;
+        width: 100%;
+        .scrollBar {
+          overflow-y: scroll;
+          border: none;
+          .animation {
+            -webkit-animation: spin 1s linear infinite;
+            -moz-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+          }
+          @-moz-keyframes spin {
+            100% {
+              -moz-transform: rotate(360deg);
+            }
+          }
+          @-webkit-keyframes spin {
+            100% {
+              -webkit-transform: rotate(360deg);
+            }
+          }
+          @keyframes spin {
+            100% {
+              -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+
+      .table-sub-heading {
+        font-family: $font;
+        font-size: 16px;
+        color: #bb0f2f;
+        padding-left: 0px;
+        border: none;
+        text-align: left;
+        width: 33.333333%;
+        font-weight: 600;
+      }
+      .table-values {
+        padding-left: 0px;
+        font-family: $font-family;
+        font-size: 16px;
+        text-align: left;
+        border: none;
+      }
+    }
+  }
+  .ApplyButton {
+    margin-top: 5px;
+    padding-left: 50px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    button {
+      width: 50%;
+      border-radius: 0;
+      // margin-top: 20px;
+      &:hover {
+        background: #bb0f2f;
+      }
+    }
+    .display {
+      display: inline-block;
+      margin-left: 10px;
+      color: rgb(0, 120, 44);
+      font-family: $font-family;
+      font-weight: 600;
+      padding: 5px 10px;
+    }
+    .hide {
+      display: none;
+    }
+  }
+}

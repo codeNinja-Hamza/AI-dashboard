@@ -1,0 +1,56 @@
+.consumer-profile-wrapper {
+  .consumerProfile-heading {
+    font-family: $font-family;
+    font-size: 31px;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 20px;
+    margin-bottom: 8px;
+  }
+  .consumer-info {
+    font-family: $font-family;
+    .info-container {
+      border: 1px solid #ebebeb;
+      display: flex;
+      align-items: center;
+      background: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 80%;
+      border-radius: 5px;
+      .text-side {
+        padding-left: 20px;
+        .helper-text {
+          font-size: 10px;
+          color: #a1a5b7;
+        }
+        .amount-value {
+          padding-top: 4px;
+          // font-size: 18px;
+          // font-weight: 450;
+          .hide {
+            display: none;
+          }
+          .show {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  .circular-bar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    font-family: $font-family;
+    .avg-credit-text {
+      flex-basis: 40%;
+      font-size: 20px;
+      font-weight: 660;
+    }
+    .progress-bar-side {
+      flex-basis: 30%;
+    }
+  }
+}

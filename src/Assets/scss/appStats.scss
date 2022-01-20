@@ -1,0 +1,22 @@
+.stats-wrapper {
+  $font-family: "poppins";
+  position: relative;
+  height: 48px;
+  background: #ebebeb;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  .wrapper {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item {
+      font-family: $font-family;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

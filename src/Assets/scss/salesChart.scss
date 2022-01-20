@@ -1,0 +1,50 @@
+$font-family: "poppins";
+.sales-chart-wrapper {
+  .salesChartHeading {
+    font-family: $font-family;
+    font-size: 31px;
+    font-weight: 600;
+    text-align: left;
+    // padding-left: 25px;
+    padding-top: 10px;
+  }
+  .sale-info {
+    font-family: $font-family;
+    .info-container {
+      border: 1px solid #ebebeb;
+      display: flex;
+      align-items: center;
+      background: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      // padding-left: 20px;
+      width: 80%;
+      // margin: auto;
+      border-radius: 5px;
+      .text-side {
+        padding-left: 20px;
+        .helper-text {
+          font-size: 10px;
+          color: #a1a5b7;
+        }
+        .amount-value {
+          padding-top: 4px;
+          // font-size: 18px;
+          // font-weight: 450;
+        }
+      }
+    }
+  }
+  .saleChart-section {
+    border-radius: 5px;
+    text-align: center;
+    font-family: $font-family;
+    font-weight: 450;
+    .chart {
+      width: 100% !important;
+    }
+    .chart-bottom-heading {
+      padding-top: 10px;
+    }
+  }
+}

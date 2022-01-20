@@ -1,0 +1,105 @@
+$font-family: "poppins";
+.transaction-history-cards {
+  .show {
+    display: block;
+    font-size: 31px;
+    font-weight: 600;
+    font-family: $font-family;
+    margin-bottom: 20px;
+  }
+  .hide {
+    display: none;
+  }
+  .credit-card {
+    margin-bottom: 20px !important;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    font-family: $font-family;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    .icon-sec {
+      flex-basis: 5%;
+      text-align: center;
+      padding: 5px 10px;
+      .icon {
+        color: rgb(202, 16, 51);
+      }
+
+      .icon-text {
+        font-size: 14px;
+      }
+    }
+    .amount {
+      flex-basis: 5%;
+      padding: 5px 10px;
+      border-left: 1px solid #ebebeb;
+      color: rgb(202, 16, 51);
+
+      // color: rgb(0, 120, 44);
+    }
+    .divider {
+      flex-basis: 70%;
+    }
+    .date {
+      flex-basis: 15%;
+      padding: 5px 10px;
+      font-size: 16px;
+      border-right: 1px solid #ebebeb;
+    }
+    .balance {
+      flex-basis: 5%;
+      padding: 5px 10px;
+      .text {
+        font-size: 14px;
+      }
+    }
+  }
+  .debit-card {
+    margin-bottom: 20px !important;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    font-family: $font-family;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    .icon-sec {
+      flex-basis: 5%;
+      text-align: center;
+      padding: 5px 10px;
+      .icon {
+        color: rgb(0, 120, 44);
+      }
+      .icon-text {
+        font-size: 14px;
+      }
+    }
+    .amount {
+      flex-basis: 5%;
+      padding: 5px 10px;
+      border-left: 1px solid #ebebeb;
+      // color: rgb(202, 16, 51);
+      color: rgb(0, 120, 44);
+    }
+    .divider {
+      flex-basis: 70%;
+    }
+    .date {
+      flex-basis: 15%;
+      padding: 5px 10px;
+      font-size: 16px;
+      border-right: 1px solid #ebebeb;
+    }
+    .balance {
+      flex-basis: 5%;
+      padding: 5px 10px;
+      .text {
+        font-size: 14px;
+      }
+    }
+  }
+}

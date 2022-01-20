@@ -1,0 +1,181 @@
+$font: "poppins";
+* {
+  margin: 0;
+  padding: 0;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+body {
+  background-color: #f5f8fa;
+}
+.animation {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.home-wrapper {
+  .header-wrapper {
+    box-shadow: rgba(180, 179, 179, 0.45) 0px 25px 20px -20px;
+    position: fixed;
+    width: 100%;
+    background: #f5f8fa;
+    z-index: 11;
+    .top-profile-section {
+      background: white;
+      width: 82%;
+      height: 60px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 15px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: 1px solid #0000001a;
+      border-top: none;
+      .logo {
+        align-self: center;
+      }
+      .user-profile {
+        display: flex;
+        column-gap: 10px;
+        .user-name {
+          align-self: center;
+          font-family: poppins;
+          text-transform: capitalize;
+          font-weight: 600;
+        }
+        .user-image {
+          display: flex;
+          align-items: center;
+
+          img {
+            border-radius: 5px;
+          }
+          .dropdown {
+            position: relative;
+            display: inline-block;
+            border: none;
+            background: transparent;
+            .show {
+              display: block;
+            }
+            .hide {
+              display: none;
+            }
+            .dropbtn {
+              border: none;
+              background: transparent;
+              padding-left: 5px;
+            }
+          }
+        }
+      }
+    }
+    .selection-box-section {
+      width: 82%;
+      margin: auto;
+      display: flex;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      justify-content: space-between;
+      .selection-box-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .selection-box-text {
+          text-align: left;
+          display: flex;
+          align-items: center;
+          font-family: $font;
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-weight: 600;
+        }
+        .select {
+          background: rgba(255, 255, 255, 1) url(../images/arrow.png) no-repeat
+            scroll calc(5% + 3px) center/8px auto;
+          width: 100%;
+        }
+
+        .selection-box {
+          font-family: $font;
+          border: 1px solid #d6dadd;
+          border-radius: 4px;
+          margin-left: 15px;
+          padding: 10px 0;
+          padding-left: 10px;
+          outline: none;
+          width: 100%;
+          background: rgba(255, 255, 255, 1) url(../images/arrow.png) no-repeat
+            scroll calc(95% + 3px) center/8px auto;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+      }
+      .calculator {
+        display: flex;
+        align-items: center;
+        border: 1px solid #0000001a;
+        border-radius: 5px;
+
+        .modal-button {
+          background: white;
+          padding: 10px 15px;
+          font-family: $font;
+          border: none;
+          color: black;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .map-wrapper {
+    width: 85%;
+    margin-left: 9%;
+    display: flex;
+    .map-area {
+      width: 20%;
+      top: 236px;
+      position: fixed;
+      background: #f5f8fa;
+      .map-section {
+        flex-basis: 20%;
+      }
+    }
+    .scroll-section {
+      flex-basis: 80%;
+      position: absolute;
+      top: 236px;
+      left: 30%;
+      right: 9%;
+      background: #f5f8fa;
+      .personal-grading {
+        margin-top: 100px;
+      }
+      .trans-history-cards {
+        margin-top: 20px !important;
+      }
+      .sales-chart {
+        width: 100%;
+      }
+    }
+  }
+}

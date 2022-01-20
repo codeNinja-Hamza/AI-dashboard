@@ -1,0 +1,76 @@
+.login-wrapper {
+  $font-family: "poppins";
+  position: relative;
+  height: 100vh;
+
+  .fields-container {
+    .logo-container {
+      text-align: center;
+      margin-bottom: 25px;
+      margin-top: 20px;
+    }
+
+    font-family: poppins;
+    background: #f5f8fa;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // height: 350px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    .email-field {
+      input {
+        padding: 15px 0px 15px 20px;
+        margin-top: 20px;
+        width: 100%;
+        border: 1px solid #fe7690;
+        border-radius: 5px;
+        font-family: $font-family;
+        outline: none;
+      }
+      margin-bottom: 10px;
+    }
+    .passw-field {
+      input {
+        padding: 15px 0px 15px 20px;
+        // margin-top: 10px;
+        width: 100%;
+        border: 1px solid #fe7690;
+        border-radius: 5px;
+        font-family: $font-family;
+        outline: none;
+      }
+      margin-bottom: 10px;
+    }
+    .login-button {
+      button {
+        width: 100%;
+        background: #ca1033;
+        color: white;
+        font-family: $font-family;
+        padding: 15px 0px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 16px;
+      }
+    }
+    .bottom-text {
+      width: 100%;
+      margin: auto;
+      font-family: $font-family;
+      text-align: left;
+      padding-top: 10px;
+    }
+    // Button {
+    //   width: 53%;
+    //   margin-bottom: 10px;
+    //   color: #bb0f2f;
+    //   outline: none;
+    // }
+    // Button :hover {
+    //   border-color: #bb0f2f;
+    // }
+  }
+}

@@ -1,0 +1,80 @@
+$font-family: "poppins";
+.line-chart-wrapper {
+  background: #f5f8fa;
+  .line-chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .lineChartHeading {
+      font-family: $font-family;
+      font-size: 31px;
+      font-weight: 600;
+      text-align: left;
+      // padding-left: 20px;
+      padding-top: 20px;
+    }
+    .date-selection {
+      padding-top: 20px;
+      padding-right: 20px;
+    }
+  }
+  .chart-container {
+    background: white;
+    margin-top: 20px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+
+    .legend {
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ebebeb;
+      .credit-side {
+        flex-basis: 50%;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        .icon-side {
+          flex-basis: 70%;
+        }
+        .text-side {
+          text-align: left;
+          .helper-text {
+            font-family: $font-family;
+            font-size: 10px;
+            color: #a1a5b7;
+            text-transform: capitalize;
+          }
+          .value {
+            font-family: $font-family;
+            font-size: 20px;
+            margin-top: 0;
+            padding-top: 0;
+          }
+        }
+      }
+      .debit-side {
+        flex-basis: 50%;
+        display: flex;
+        .helper-text {
+          font-family: $font-family;
+          font-size: 10px;
+          color: #a1a5b7;
+          text-transform: capitalize;
+        }
+        .value {
+          font-family: $font-family;
+          font-size: 20px;
+          margin-top: 0;
+          padding-top: 0;
+        }
+      }
+    }
+    .stats-chart {
+      width: 95%;
+      margin: auto;
+      padding-bottom: 20px;
+    }
+  }
+}

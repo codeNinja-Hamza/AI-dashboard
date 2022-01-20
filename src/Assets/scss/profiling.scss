@@ -1,0 +1,46 @@
+.profiling-wrapper {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .card-heading-conatiner {
+      font-family: poppins;
+      font-size: 31px;
+      font-weight: 600;
+      align-self: center;
+      flex-basis: 50%;
+      border-right: 1px solid #ebebeb;
+      padding-left: 10px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .card-text-side {
+      align-self: center;
+      flex-basis: 50%;
+      .items {
+        padding-left: 40%;
+        .helper-text {
+          font-size: 12px;
+          font-family: $font-family;
+          color: #a1a5b7;
+        }
+        .data-value {
+          font-family: $font;
+          font-weight: 500;
+          font-size: 18px;
+          border-bottom: 1px solid #ebebeb;
+          padding-bottom: 5px;
+          margin-bottom: 10px;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
